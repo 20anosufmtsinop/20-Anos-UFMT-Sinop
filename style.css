@@ -56,9 +56,13 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 18px 12px 0;
 }
 #imagetop{
-    width: 30%;
+    width: min(90vw, 760px);
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .event-title {
           display: flex;
@@ -380,5 +384,13 @@ iframe {
 
   .sponsor-bronze {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .imagetop {
+    padding-top: 12px;
+  }
+
+  #imagetop {
+    width: min(92vw, 520px);
   }
 }
