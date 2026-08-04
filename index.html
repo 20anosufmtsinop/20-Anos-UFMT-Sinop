@@ -23,13 +23,13 @@
 
                     <div class="video-grid">
                         <div class="video-card">
-                            <iframe class="video-embed" data-video-id="642wsX7dbr0" title="Vídeo institucional 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <video class="video-embed local-video" data-video-src="./files/IMG_0174.mp4" controls muted playsinline preload="auto"></video>
                         </div>
                         <div class="video-card">
-                            <iframe class="video-embed" data-video-id="642wsX7dbr0" title="Vídeo institucional 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <video class="video-embed local-video" data-video-src="./files/IMG_0176.mp4" controls muted playsinline preload="auto"></video>
                         </div>
                         <div class="video-card">
-                            <iframe class="video-embed" data-video-id="642wsX7dbr0" title="Vídeo institucional 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="video-embed youtube-video" data-video-id="BcVRJ2LbQiM" title="Vídeo institucional 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -44,28 +44,28 @@
 
                     <div class="event-grid">
                         <article class="event-card">
-                            <div class="event-date">07 de agosto</div>
+                            <div class="event-date">07 de agosto - Sexta-Feira</div>
                             <h3 class="event-title"><span class="event-marker"></span>Inauguração do Mural Artístico</h3>
                             <p><strong>Horário:</strong> 16h</p>
                             <p><strong>Local:</strong> UFMT Campus Sinop</p>
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">16 de agosto</div>
+                            <div class="event-date">16 de agosto - Domingo</div>
                             <h3 class="event-title"><span class="event-marker"></span>Festival de Karatê</h3>
                             <p><strong>Horário:</strong> 08h</p>
                             <p><strong>Local:</strong> Quadra CAIC - UFMT</p>
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">17 de agosto</div>
+                            <div class="event-date">17 de agosto - Segunda-Feira</div>
                             <h3 class="event-title"><span class="event-marker"></span>Culto Ecumênico</h3>
                             <p><strong>Horário:</strong> 19:30h</p>
                             <p><strong>Local:</strong> Igreja Santo Antônio</p>
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">18 de agosto</div>
+                            <div class="event-date">18 de agosto - Terça-Feira</div>
                             <h3 class="event-title"><span class="event-marker"></span>Sessão de Abertura</h3>
                             <p><strong>Horário:</strong> 14:30h</p>
                             <p><strong>Local:</strong> Dante de Oliveira</p>
@@ -75,7 +75,7 @@
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">19 de agosto</div>
+                            <div class="event-date">19 de agosto - Quarta-Feira</div>
                             <h3 class="event-title"><span class="event-marker"></span>Mostra de Pós-Graduação</h3>
                             <p><strong>Horário:</strong> 07:30 - 11:30 / 13:30 - 17:30</p>
                             <p><strong>Local:</strong> Dante de Oliveira</p>
@@ -85,7 +85,7 @@
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">20 de agosto</div>
+                            <div class="event-date">20 de agosto - Quinta-Feira</div>
                             <h3 class="event-title"><span class="event-marker"></span>Mostra dos Cursos de Graduação</h3>
                             <p><strong>Horário:</strong> 07:30 - 11:30 / 13:30 - 17:30</p>
                             <p><strong>Local:</strong> Dante de Oliveira</p>
@@ -101,7 +101,7 @@
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">21 de agosto</div>
+                            <div class="event-date">21 de agosto - Sexta-Feira</div>
                             <h3 class="event-title"><span class="event-marker"></span>Projeto Olá UFMT</h3>
                             <p><strong>Horário:</strong> 07:30 - 11:30 / 13:30 - 17:30</p>
                             <p><strong>Local:</strong> UFMT Campus Sinop</p>
@@ -120,7 +120,7 @@
                         </article>
 
                         <article class="event-card">
-                            <div class="event-date">22 de agosto</div>
+                            <div class="event-date">22 de agosto - Sábado</div>
                             <h3 class="event-title"><span class="event-marker"></span>Sinop Sustentável</h3>
                             <p><strong>Horário:</strong> 07:30 - 17:30</p>
                             <p><strong>Local:</strong> Sebrae</p>
@@ -237,6 +237,14 @@
                 <p>© <span id="currentYear"></span> UFMT</p>
             </div>
         </footer>
+    </div>
+
+    <div class="floating-video-wrapper">
+        <div class="floating-video-header">
+            <span>Vídeo</span>
+            <button type="button" class="floating-video-toggle" aria-label="Ativar ou desativar som">🔊</button>
+        </div>
+        <video class="video-embed floating-video" data-video-src="./files/IMG_0174.mp4" autoplay loop playsinline preload="auto" controls></video>
     </div>
 
     <script src="script.js"></script>

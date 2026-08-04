@@ -247,7 +247,7 @@ iframe {
 }
 
 .sponsor-diamond {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .sponsor-gold {
@@ -288,6 +288,7 @@ iframe {
 
 .diamond-card {
   min-height: 220px;
+  height: 220px;
 }
 
 .gold-card {
@@ -348,6 +349,52 @@ iframe {
   margin: 0;
 }
 
+.floating-video-wrapper {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: min(220px, 24vw);
+  z-index: 999;
+  background: rgba(9, 18, 28, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.35);
+}
+
+.floating-video-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.floating-video-toggle {
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.floating-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #000;
+  border: 0;
+  object-fit: cover;
+}
+
 @media (max-width: 640px) {
   .hero {
     padding-bottom: 56px;
@@ -365,9 +412,16 @@ iframe {
   .event-grid,
   .video-grid,
   .contact-grid,
-  .sponsor-grid,
-  .support-grid {
+  .sponsor-grid {
     grid-template-columns: 1fr;
+  }
+
+  .support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .support-card {
+    min-height: 100px;
   }
 
   .sponsor-diamond {
@@ -392,5 +446,11 @@ iframe {
 
   #imagetop {
     width: min(92vw, 520px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .floating-video-wrapper {
+    display: none;
   }
 }
