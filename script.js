@@ -41,34 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const floatingToggle = document.querySelector('.floating-video-toggle');
-  const floatingVideo = document.querySelector('.floating-video');
-
-  const updateFloatingToggle = () => {
-    if (!floatingToggle || !floatingVideo) return;
-
-    floatingToggle.textContent = floatingVideo.muted ? '🔊' : '🔉';
-    floatingToggle.setAttribute('aria-label', floatingVideo.muted ? 'Ativar som' : 'Desativar som');
-  };
-
-  if (floatingToggle && floatingVideo) {
-    floatingVideo.muted = false;
-    floatingVideo.volume = 0.8;
-    updateFloatingToggle();
-
-    floatingToggle.addEventListener('click', () => {
-      floatingVideo.muted = !floatingVideo.muted;
-      updateFloatingToggle();
-    });
-
-    document.addEventListener('pointerdown', () => {
-      floatingVideo.muted = false;
-      floatingVideo.volume = 0.8;
-      floatingVideo.play().catch(() => {});
-      updateFloatingToggle();
-    }, { once: true });
-  }
-
   const currentYear = document.getElementById('currentYear');
   if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
