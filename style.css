@@ -151,6 +151,16 @@ iframe {
   font-size: 0.72rem;
   font-weight: 800;
 }
+.photographers {
+  margin: 0 0 8px;
+  padding-top: 4px;
+  padding-left: 1rem;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
 
 .section-heading h2 {
   margin: 0;
